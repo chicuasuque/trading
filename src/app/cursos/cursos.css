@@ -1,0 +1,120 @@
+.container {
+  padding: 60px 80px;
+  background-color: black;
+  color: white;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra las cards */
+  align-items: stretch; /* Todas la misma altura */
+}
+
+.container h2 {
+  margin-bottom: 40px;
+  font-size: 32px; /* Más grande */
+  text-align: center;
+  width: 100%; /* Ocupa todo el ancho */
+}
+
+/* Cards más grandes */
+.card {
+  background-color: #111;
+  border: 1px solid #222;
+  padding: 30px;
+  width: 350px; /* Aumentado de 300px a 350px */
+  border-radius: 12px; /* Un poco más redondeado */
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hover elegante */
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #d4af37;
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.2);
+}
+
+/* Títulos más grandes */
+.card h3 {
+  color: #d4af37;
+  margin-bottom: 15px;
+  font-size: 24px; /* Más grande */
+  font-weight: 600;
+}
+
+/* Descripción */
+.card p {
+  font-size: 20px; /* Más grande */
+  font-weight: 700; /* NEGRITA (bold) */
+  line-height: 1.6;
+  color: #bfbfbf;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+/* El precio aún más destacado */
+.card p:last-of-type {
+  font-size: 26px; /* Precio más grande */
+  font-weight: 800; /* Extra negrita */
+  color: #d4af37;
+  margin: 20px 0;
+}
+
+/* Botón más grande */
+.card button {
+  background-color: #d4af37;
+  border: none;
+  padding: 12px 20px; /* Más padding */
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px; /* Texto más grande */
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  width: 100%; /* Botón ancho completo */
+}
+
+.card button:hover {
+  background-color: #b9972e;
+  transform: scale(1.02);
+}
+
+/* Imagen más grande */
+.card img {
+  width: 100%;
+  height: 200px; /* Aumentado de 160px a 200px */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Título principal */
+.h2 h2 {
+  text-align: center;
+  font-size: 42px; /* Título principal más grande */
+  color: #d4af37;
+  margin: 40px 0;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 20px;
+    gap: 30px;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .h2 h2 {
+    font-size: 32px;
+  }
+}

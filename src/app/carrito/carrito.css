@@ -1,0 +1,109 @@
+/* carrito.css */
+.carrito-container {
+  min-height: calc(100vh - 65px);
+  background-color: black;
+  color: white;
+  padding: 60px 80px;
+}
+
+.carrito-container h2 {
+  color: #d4af37;
+  margin-bottom: 40px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.carrito-container h3 {
+  color: #d4af37;
+  margin: 40px 0 20px;
+  font-size: 24px;
+}
+
+.selector-curso {
+  background-color: #111;
+  border: 1px solid #222;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.selector-curso label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #bfbfbf;
+}
+
+.selector-curso select {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  background-color: #222;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.selector-curso select option {
+  background-color: #222;
+  color: white;
+}
+
+.selector-curso button {
+  background-color: #d4af37;
+  border: none;
+  color: black;
+  padding: 12px 35px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.selector-curso button:hover {
+  background-color: #b9972e;
+  transform: translateY(-2px);
+}
+
+.carrito-lista {
+  background-color: #111;
+  border: 1px solid #222;
+  padding: 25px;
+  border-radius: 8px;
+  min-height: 100px;
+}
+
+.vacio {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 20px;
+}
+
+.carrito-item {
+  padding: 15px;
+  border-bottom: 1px solid #222;
+  color: #bfbfbf;
+}
+
+.carrito-item:last-child {
+  border-bottom: none;
+}
+
+.carrito-item span {
+  font-size: 16px;
+}
+
+.total {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #111;
+  border: 1px solid #222;
+  border-radius: 8px;
+  text-align: right;
+  font-size: 20px;
+  color: #d4af37;
+}

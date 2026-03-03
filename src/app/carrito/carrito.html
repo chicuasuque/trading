@@ -1,0 +1,33 @@
+<br>
+  <div class="selector-curso">
+    <label for="cursos">Elige un curso:</label> 
+    <select id="cursos" #cursoSelect> 
+      <option value="">-- Selecciona un curso --</option>
+      <option value="modulo1">Módulo 1 - Introducción ($50.000)</option>
+      <option value="modulo2">Módulo 2 - Bases Fundamentales ($80.000)</option>
+      <option value="modulo3">Módulo 3 - Estrategias ($100.000)</option>
+    </select>
+    <br>
+    <button (click)="agregarCursoSimple(cursoSelect.value)">
+      Agregar al carrito
+    </button>
+  </div>
+
+  <h3>Tu Carrito</h3>
+  <div class="carrito-lista">
+    @if (cursosSeleccionados.length === 0) {
+      <p class="vacio">No hay cursos en el carrito</p>
+    }
+    
+    @for (curso of cursosSeleccionados; track $index) {
+      <div class="carrito-item">
+        <span>{{ curso.nombre }} - ${{ curso.precio }}</span>
+      </div>
+    }
+  </div>
+  
+  @if (cursosSeleccionados.length > 0) {
+    <div class="total">
+      <strong>Total: ${{ calcularTotal() }}</strong>
+    </div>
+  }

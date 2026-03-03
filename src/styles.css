@@ -1,1 +1,140 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #d4af37;
+}
+
+/* Navbar más elegante */
+.navbar {
+  background-color: #111;
+  padding: 20px 50px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border-bottom: 1px solid #222;
+}
+
+.navbar a {
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  color: #d4af37;
+}
+
+/* Contenedor principal */
+.container {
+  padding: 40px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Títulos más elegantes */
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  color: #d4af37;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  color: #d4af37;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color: #d4af37;
+}
+
+/* Cards más elegantes */
+.card {
+  background-color: #111;
+  padding: 25px;
+  border: 1px solid #222;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #d4af37;
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.1);
+}
+
+/* Botones más elegantes */
+button {
+  background-color: #d4af37;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  color: #000;
+}
+
+button:hover {
+  background-color: #b9972e;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(212, 175, 55, 0.2);
+}
+
+/* Texto general */
+p {
+  font-weight: 300;
+  line-height: 1.8;
+  color: #bfbfbf;
+  margin-bottom: 15px;
+}
+
+/* Clase para texto dorado */
+.text-gold {
+  color: #d4af37;
+}
+
+/* Clase para separador elegante */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+  margin: 40px 0;
+}

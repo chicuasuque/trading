@@ -1,0 +1,109 @@
+.container {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  padding: 60px 20px; /* Cambiado de 120px a 60px */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 🔥 Título principal - GRANDE PERO NORMAL (sin negrita) */
+.container h1 {
+  font-size: 72px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-top: 0; /* Asegurar que no hay margen superior */
+}
+
+/* Texto principal - MÁS GRANDE Y EN NEGRITA (SOLO ESTOS) */
+.container p {
+  max-width: 900px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.8;
+  color: #bfbfbf;
+  margin-bottom: 30px;
+}
+
+/* 🔥 Botón elegante - NORMAL */
+.container button {
+  background: transparent;
+  border: 3px solid #d4af37;
+  color: #d4af37;
+  padding: 16px 45px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 35px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.container button:hover {
+  background-color: #d4af37;
+  color: black;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Línea dorada elegante */
+.container hr {
+  width: 180px;
+  border: 3px solid #d4af37;
+  margin: 100px auto;
+}
+
+/* Subtítulo - NORMAL */
+.container h2 {
+  font-size: 48px;
+  font-weight: 400;
+  color: #d4af37;
+  margin-bottom: 35px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* Para cualquier texto adicional */
+.container .texto-destacado {
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 20px; /* También reducido en móvil */
+  }
+  
+  .container h1 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: 0;
+  }
+  
+  .container p {
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+  .container h2 {
+    font-size: 36px;
+    font-weight: 400;
+  }
+  
+  .container button {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 14px 35px;
+  }
+}
