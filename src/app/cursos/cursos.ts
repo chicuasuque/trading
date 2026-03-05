@@ -9,6 +9,7 @@ import { RouterLink } from '@angular/router';
   templateUrl: './cursos.html',
   styleUrl: './cursos.css',
 })
+
 export class Cursos {
   agregarAlCarrito(curso: string, precio: number) {
     // Obtener carrito actual
@@ -22,4 +23,9 @@ export class Cursos {
     
     alert(`${curso} agregado al carrito`);
   }
+  cursoAbierto: number | null = null;
+
+toggleInfo(id: number): void {
+  this.cursoAbierto = this.cursoAbierto === id ? null : id;
+}
 }

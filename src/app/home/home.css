@@ -107,3 +107,11 @@
     padding: 14px 35px;
   }
 }
+/* Imagen principal de la home */
+.container > img {
+  max-width: 360px;   /* Nunca más grande que el título */
+  width: 100%;
+  height: auto;
+  margin: 20px 0 30px 0;
+  object-fit: contain;
+}

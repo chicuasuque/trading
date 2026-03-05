@@ -5,27 +5,74 @@
 
 <div class="container">
 
+  <!-- Curso Iniciación -->
   <div class="card">
-    <h3>Módulo 1 - Introducción</h3>
-    <p>Conceptos básicos del trading.</p>
-    <p>$50.000</p>
-    <img src="/introduccion.jpg" alt="">
-    <button routerLink="/carrito">Ver carrito</button>
+    <h3>Curso Iniciacion</h3>
+    <p>$250.000</p>
+    <img src="/introduccion.jpg" alt=""><br>
+
+    <button (click)="toggleInfo(1)">
+      {{ cursoAbierto === 1 ? 'Ocultar información' : 'Info.Curso' }}
+    </button>
+
+    <div class="info" [hidden]="cursoAbierto !== 1">
+      Aprende desde cero fundamentos del trading,
+      gestión de riesgo y práctica en mercado real.
+    </div>
   </div>
 
+
+  <!-- Curso Básico -->
   <div class="card">
-    <h3>Módulo 2 - Bases Fundamentales</h3>
-    <p>Entiende el mercado y cómo funciona.</p>
-    <p>$80.000</p>
-    <img src="/trading.png" alt="">
-   <button routerLink="/carrito">Ver carrito</button>
+    <h3>Curso Basico</h3>
+    <p>$300.000</p>
+    <img src="/trading.png" alt=""><br>
+
+    <button (click)="toggleInfo(2)">
+      {{ cursoAbierto === 2 ? 'Ocultar información' : 'Info.Curso' }}
+    </button>
+
+    <div class="info" [hidden]="cursoAbierto !== 2">
+      Este curso básico de trading está diseñado para enseñarte cómo funciona realmente el mercado financiero.
+      Aprenderás análisis técnico, identificación de tendencias, soportes y resistencias,
+      gestión del riesgo y control emocional.
+    </div>
   </div>
 
+
+  <!-- Curso Intermedio -->
   <div class="card">
-    <h3>Módulo 3 - Estrategias</h3>
-    <p>Estrategias prácticas paso a paso.</p>
-    <p>$100.000</p>
-    <img src="/estrategias.png" alt="">
-    <button routerLink="/carrito">Ver carrito</button>
+    <h3>Curso Intermedio</h3>
+    <p>$350.000</p>
+    <img src="/estrategias.png" alt=""><br>
+
+    <button (click)="toggleInfo(3)">
+      {{ cursoAbierto === 3 ? 'Ocultar información' : 'Info.Curso' }}
+    </button>
+
+    <div class="info" [hidden]="cursoAbierto !== 3">
+      Profundiza en estrategias avanzadas de entrada y salida,
+      mejora tu análisis técnico y aprende a gestionar operaciones
+      con mayor precisión y disciplina.
+    </div>
   </div>
+
+
+  <!-- Curso Pro -->
+  <div class="card">
+    <h3>Curso Pro</h3>
+    <p>$400.000</p>
+    <img src="/estrategias.png" alt=""><br>
+
+    <button (click)="toggleInfo(4)">
+      {{ cursoAbierto === 4 ? 'Ocultar información' : 'Info.Curso' }}
+    </button>
+
+    <div class="info" [hidden]="cursoAbierto !== 4">
+      Opera con mentalidad profesional aplicando gestión avanzada de capital,
+      lectura de liquidez y estructura institucional del mercado.
+      Desarrolla consistencia y controla el riesgo como un trader experto.
+    </div>
+  </div>
+
 </div>
